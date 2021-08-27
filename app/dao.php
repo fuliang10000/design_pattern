@@ -1,4 +1,7 @@
 <?php
+/**
+ * 数据访问对象模式
+ */
 namespace app;
 
 use common\dao\UserDao;
