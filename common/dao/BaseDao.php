@@ -19,8 +19,8 @@ abstract class BaseDao
 
     private function __connectToDB($user, $pass, $host, $database)
     {
-        $this->__connection = mysql_connect($host, $user, $pass);
-        mysql_select_db($database, $this->__connection);
+        $this->__connection = @mysql_connect($host, $user, $pass);
+        @mysql_select_db($database, $this->__connection);
     }
 
     public function fetch($value, $key = null)
@@ -30,10 +30,10 @@ abstract class BaseDao
         }
 
         $sql = "select * from {$this->_tableName} where {$key} = '{$value}'";
-        $results = mysql_query($sql, $this->__connection);
+        $results = @mysql_query($sql, $this->__connection);
 
         $rows = [];
-        while ($result = mysql_fetch_array($results)) {
+        while ($result = @mysql_fetch_array($results)) {
             $rows[] =  $result;
         }
 
@@ -53,6 +53,6 @@ abstract class BaseDao
         $sql .= implode(',', $updates);
         $sql .= " where {$this->_primaryKey}='{$keyArray[$this->_primaryKey]}' ";
 
-        return mysql_query($sql, $this->__connection);
+        return @mysql_query($sql, $this->__connection);
     }
 }
