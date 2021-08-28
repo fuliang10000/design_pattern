@@ -9,7 +9,7 @@ use common\builder\ProductBuilder;
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
-$productConfigs = ['type' => 'shirt', 'size' => 'XL', 'color' => 'red'];
+$productConfigs = ['type' => 'shirt', 'size' => 'XL', 'color' => 'red', 'cate' => 'XXX'];
 
 //$product = new Product();
 //$product->setType($productConfigs['type']);

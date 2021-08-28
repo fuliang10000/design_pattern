@@ -14,6 +14,6 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 //$log = new LogToConsole($error);
 //$log->write();
 
-$error = new LogToCSVAdapter("401:Not Found");
+$error = new LogToCSVAdapter("500:Not Found");
 $log = new LogToCSV($error);
 $log->write();

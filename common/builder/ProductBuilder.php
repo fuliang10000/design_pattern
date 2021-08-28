@@ -20,6 +20,7 @@ class ProductBuilder
         $this->_product->setSize($this->_configs['size']);
         $this->_product->setType($this->_configs['type']);
         $this->_product->setColor($this->_configs['color']);
+        $this->_product->setCate($this->_configs['cate']);
     }
 
     public function getProduct()

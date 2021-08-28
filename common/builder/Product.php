@@ -9,6 +9,7 @@ class Product
     protected $_type = '';
     protected $_size = '';
     protected $_color = '';
+    protected $_cate = '';
 
     /**
      * @param string $color
@@ -32,5 +33,13 @@ class Product
     public function setType($type)
     {
         $this->_type = $type;
+    }
+
+    /**
+     * @param string $cate
+     */
+    public function setCate(string $cate)
+    {
+        $this->_cate = $cate;
     }
 }
