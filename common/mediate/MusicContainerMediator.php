@@ -10,8 +10,8 @@ class MusicContainerMediator
 
     public function __construct()
     {
-        $this->_containers[] = 'common\mediate\Cd';
-        $this->_containers[] = 'common\mediate\MP3Archive';
+        $this->_containers[] = Cd::class;
+        $this->_containers[] = MP3Archive::class;
     }
 
     public function change($originalObject, $newValue)
