@@ -34,4 +34,9 @@ class Cd
     {
         $this->notifyObserver('purchased');
     }
+
+    public function play()
+    {
+        $this->notifyObserver('play');
+    }
 }
