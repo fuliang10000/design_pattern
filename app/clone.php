@@ -1,6 +1,6 @@
 <?php
 /**
- * 观察者模式
+ * 原型模式
  */
 namespace app;
 
