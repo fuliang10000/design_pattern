@@ -5,6 +5,7 @@
   "autoload": {
     "psr-4": {
       "app\\": ".\\app\\",
+      "php8\\": ".\\php8\\",
       "common\\": ".\\common\\",
       "lib\\": ".\\lib\\"
     }
