@@ -8,6 +8,9 @@
       "php8\\": ".\\php8\\",
       "common\\": ".\\common\\",
       "lib\\": ".\\lib\\"
-    }
+    },
+    "files": [
+      "./common/components/functions.php"
+    ]
   }
 }

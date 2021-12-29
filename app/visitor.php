@@ -8,12 +8,14 @@ namespace app;
 
 use common\visitor\Cd;
 use common\visitor\CdVisitorLogPurchase;
+use common\visitor\CdVisitorPopulateDiscountList;
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 $band = 'google';
 $title = 'google_title';
-$price = '12.20';
+$price = '9.20';
 $cd = new Cd($band, $title, $price);
 $cd->buy();
 $cd->acceptVisitor(new CdVisitorLogPurchase());
+$cd->acceptVisitor(new CdVisitorPopulateDiscountList());
