@@ -4,7 +4,7 @@
 namespace common\visitor;
 
 
-class CdVisitorPopulateDiscountList
+class CdVisitorPopulateDiscountList extends CdVisitorLogPurchase
 {
     public function visitCD($cd)
     {

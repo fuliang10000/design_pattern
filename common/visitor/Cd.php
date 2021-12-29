@@ -27,7 +27,7 @@ class Cd
         $this->log = $logLine;
     }
 
-    public function acceptVisitor($visitor)
+    public function acceptVisitor(CdVisitorLogPurchase $visitor)
     {
         $visitor->visitCD($this);
     }

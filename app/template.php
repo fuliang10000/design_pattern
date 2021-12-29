@@ -1,6 +1,7 @@
 <?php
 /**
  * 模板模式
+ * @description
  */
 namespace app;
 
