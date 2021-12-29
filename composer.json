@@ -10,7 +10,7 @@
       "lib\\": ".\\lib\\"
     },
     "files": [
-      "./common/components/functions.php"
+      "common/components/functions.php"
     ]
   }
 }
