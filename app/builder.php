@@ -1,6 +1,7 @@
 <?php
 /**
  * 建造者模式
+ * @description 建造者设计模式的目的是消除其他对象的复杂构建过程。
  */
 namespace app;
 

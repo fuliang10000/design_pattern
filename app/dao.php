@@ -1,6 +1,7 @@
 <?php
 /**
  * 数据访问对象模式
+ * @description 为了减少重复和抽象化数据。
  */
 namespace app;
 
